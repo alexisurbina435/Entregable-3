@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var guerrero_1 = require("./guerrero");
+var mago_1 = require("./mago");
+var arquero_1 = require("./arquero");
+var guerrero = new guerrero_1.Guerrero("Mirbok", 150);
+var mago = new mago_1.Mago("Mirboki", "evil spirit");
+var arquero = new arquero_1.Arquero('Mir', 5);
+guerrero.atacar();
+mago.atacar();
+arquero.atacar();
+guerrero.defender();
+mago.defender();
+arquero.defender();
+console.log(arquero);
+arquero.CantidadFlechas();
+arquero.AumentarHp();
+console.log(arquero);
