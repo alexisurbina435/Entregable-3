@@ -2,6 +2,7 @@ import { Personaje } from "./personaje";
 import { Guerrero } from "./guerrero";
 import { Mago } from "./mago";
 import { Arquero } from "./arquero";
+import { SuperGuerrero } from "./superGuerrero";
 
 let guerrero: Guerrero = new Guerrero("Mirbok",150);
 
@@ -16,9 +17,24 @@ arquero.atacar();
 guerrero.defender();
 mago.defender();
 arquero.defender();
+console.log(guerrero);
 
-console.log(arquero);
+// console.log(arquero);
 
-arquero.CantidadFlechas();
-arquero.AumentarHp();
-console.log(arquero);
+// arquero.CantidadFlechas();
+// arquero.AumentarHp();
+// console.log(arquero);
+
+
+// guerrero.getDefensa();
+// guerrero.AumentarHp();
+// console.log(guerrero);
+
+//evoluciono a guerrero en superGuerrero
+guerrero = new SuperGuerrero('Mirbok',300);
+
+
+console.log(guerrero);
+
+console.log(((guerrero) as SuperGuerrero).getVida());
+
